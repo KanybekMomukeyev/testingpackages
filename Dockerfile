@@ -43,6 +43,7 @@
 #EXPOSE 8080
 
 
+
 FROM google/golang
 
 WORKDIR /gopath/src/localcode/kano/testingpackages
