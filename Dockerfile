@@ -42,22 +42,20 @@
 ## Document that the service listens on port 8080.
 #EXPOSE 8080
 
-
-
 FROM google/golang
 
-WORKDIR /gopath/src/localcode/kano/testingpackages
+WORKDIR /gopath/src/github.com/KanybekMomukeyev/testingpackages
 
-ADD . /gopath/src/localcode/kano/testingpackages/
-ADD views /gopath/src/localcode/kano/testingpackages/views
-ADD conf /gopath/src/localcode/kano/testingpackages/conf
-ADD controllers /gopath/src/localcode/kano/testingpackages/controllers
+ADD . /gopath/src/github.com/KanybekMomukeyev/
+ADD views /gopath/src/github.com/KanybekMomukeyev/testingpackages/views
+ADD conf /gopath/src/github.com/KanybekMomukeyev/testingpackages/conf
+ADD controllers /gopath/src/github.com/KanybekMomukeyev/testingpackages/controllers
 
 # go get all of the dependencies
 RUN go get github.com/astaxie/beego && go get github.com/beego/bee
-RUN go get github.com/KanybekMomukeyev/MathApp
+RUN go get github.com/KanybekMomukeyev/testingpackages
 
 EXPOSE 8080
 CMD []
-#ENTRYPOINT ["/gopath/bin/MathApp"]
-ENTRYPOINT /go/bin/MathApp
+#ENTRYPOINT ["/gopath/bin/testingpackages"]
+ENTRYPOINT /go/bin/testingpackages
