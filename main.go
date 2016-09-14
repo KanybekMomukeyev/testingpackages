@@ -1,7 +1,7 @@
 package main
 
 import (
-	"localcode/kano/testingpackages/controllers"
+	"github.com/KanybekMomukeyev/testingpackages/controllers"
 	"fmt"
 	"github.com/astaxie/beego"
 	"strconv"
