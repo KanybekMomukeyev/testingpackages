@@ -18,6 +18,11 @@ type Saiyan struct {
 	Father *Saiyan
 }
 
+type Saiyan2 struct {
+	Name int
+	Power int
+}
+
 
 func Super(s *Person) {
 	s.Age += 10000
@@ -50,6 +55,13 @@ func SomeFunctionCalled2(k int) int {
 	fmt.Println("")
 	fmt.Println("STARTING")
 
+	goku1000 := new(Saiyan2)
+	fmt.Println(goku1000 )
+
+	goku2000 := &Saiyan2{}
+	fmt.Println(goku2000 )
+
+
 	gokurbek := &Saiyan {
 		Name: "goku",
 		Power: 9000,
@@ -67,9 +79,13 @@ func SomeFunctionCalled2(k int) int {
 
 	fmt.Println(gokurbek)
 	fmt.Println(gohannek)
-	
+
 
 	per1 := NewPerson("koke","boke",1000)
+	per1.First = "10"
+	per1.Last = "10"
+	per1.Age = 0
+
 	per2 := NewPerson2("koke","boke",1000)
 
 	fmt.Println(*per1)
