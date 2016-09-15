@@ -18,10 +18,14 @@ func TestProduct(t *testing.T) {
 	if multiply(2, 5) != 10 {
 		t.Fail()
 	}
+
 	if multiply(2, 100) != 200 {
 		t.Fail()
 	}
+
 	if multiply(222, 3) != 666 {
 		t.Fail()
 	}
 }
+
+//go test github.com/KanybekMomukeyev/testingpackages -run TestName
