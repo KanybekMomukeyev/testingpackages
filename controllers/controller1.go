@@ -24,6 +24,7 @@ type Saiyan2 struct {
 }
 
 
+
 func Super(s *Person) {
 	s.Age += 10000
 }
@@ -47,13 +48,23 @@ func NewPerson2(first string, last string, age int) Person {
 		Age: age,
 	}
 }
-
+type person struct {
+	name string
+	age int
+}
 
 func SomeFunctionCalled2(k int) int {
 
 	fmt.Println("")
 	fmt.Println("")
 	fmt.Println("STARTING")
+
+
+	var P person  // p is person type
+	P.name = "Astaxie"  // assign "Astaxie" to the field 'name' of p
+	P.age = 25  // assign 25 to field 'age' of p
+	fmt.Printf("The person's name is %s\n", P.name)
+
 
 	goku1000 := new(Saiyan2)
 	fmt.Println(goku1000 )

@@ -28,4 +28,5 @@ func TestProduct(t *testing.T) {
 	}
 }
 
+//go test -v
 //go test github.com/KanybekMomukeyev/testingpackages -run TestName
