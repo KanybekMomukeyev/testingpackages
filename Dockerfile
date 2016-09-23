@@ -42,7 +42,8 @@
 ## Document that the service listens on port 8080.
 #EXPOSE 8080
 
-FROM google/golang
+#FROM google/golang
+FROM hypriot/rpi-golang
 
 WORKDIR /gopath/src/github.com/KanybekMomukeyev/testingpackages
 
