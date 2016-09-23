@@ -43,7 +43,7 @@
 #EXPOSE 8080
 
 #FROM google/golang
-FROM hypriot/rpi-golang
+FROM resin/raspberrypi3-golang
 
 WORKDIR /gopath/src/github.com/KanybekMomukeyev/testingpackages
 
