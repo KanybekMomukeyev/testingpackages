@@ -58,7 +58,6 @@ RUN go get github.com/KanybekMomukeyev/testingpackages
 
 EXPOSE 8080
 
-CMD []
 CMD ["go", "run", "main.go"]
 
 #ENTRYPOINT ["/gopath/bin/testingpackages"]
