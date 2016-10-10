@@ -57,6 +57,10 @@ RUN go get github.com/astaxie/beego && go get github.com/beego/bee
 RUN go get github.com/KanybekMomukeyev/testingpackages
 
 EXPOSE 8080
+
 CMD []
+CMD ["go", "run", "main.go"]
+
 #ENTRYPOINT ["/gopath/bin/testingpackages"]
-ENTRYPOINT /go/bin/testingpackages
+#ENTRYPOINT /go/bin/testingpackages
+
