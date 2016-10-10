@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/KanybekMomukeyev/testingpackages/controllers"
+	//"github.com/KanybekMomukeyev/testingpackages/controllers"
 	//"github.com/KanybekMomukeyev/testingpackages/models"
 	"github.com/astaxie/beego"
 	"strconv"
@@ -16,15 +16,15 @@ func main() {
 	   /product/6/23
 	   ...
 	*/
-	//fmt.Print("Hello world!\n")
+	fmt.Print("Hello world!\n")
 	//fmt.Print(models.DoSomethib())
 	//fmt.Print(controllers.SomeFunctionCalled(2))
 	//fmt.Print(controllers.SomeFunctionCalled2(3))
 
-	fmt.Print(controllers.SomeFunction123())
+	//fmt.Print(controllers.SomeFunction123())
 
-	//beego.Router("/:operation/:num1:int/:num2:int", &mainController{})
-	//beego.Run()
+	beego.Router("/:operation/:num1:int/:num2:int", &mainController{})
+	beego.Run()
 }
 
 // This is the controller that this application uses
