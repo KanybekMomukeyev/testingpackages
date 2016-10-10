@@ -42,8 +42,8 @@
 ## Document that the service listens on port 8080.
 #EXPOSE 8080
 
-#FROM google/golang
-FROM resin/raspberrypi3-golang
+FROM google/golang
+#FROM resin/raspberrypi3-golang
 
 WORKDIR /gopath/src/github.com/KanybekMomukeyev/testingpackages
 
