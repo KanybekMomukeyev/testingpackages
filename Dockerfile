@@ -56,10 +56,11 @@ ADD controllers /gopath/src/github.com/KanybekMomukeyev/testingpackages/controll
 RUN go get github.com/astaxie/beego && go get github.com/beego/bee
 RUN go get github.com/KanybekMomukeyev/testingpackages
 
+ADD main.go /gopath/src/github.com/KanybekMomukeyev/testingpackages/main.go
+
 EXPOSE 8080
 
-CMD ["go", "run", "/main.go"]
-
+CMD ["go", "run", "/gopath/src/github.com/KanybekMomukeyev/testingpackages/main.go"]
 
 #ENTRYPOINT ["/gopath/bin/testingpackages"]
 #ENTRYPOINT /go/bin/testingpackages
